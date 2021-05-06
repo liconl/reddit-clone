@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
 
 import { Input } from "@material-ui/core";
@@ -21,8 +22,14 @@ import RedoIcon from "@material-ui/icons/Redo";
 import ReplyIcon from "@material-ui/icons/Reply";
 import Redo from "@material-ui/icons/Redo";
 import TurnedInNotIcon from "@material-ui/icons/TurnedInNot";
+
 export default function Home() {
-  /*  alert("need to work on an alert"); */
+  useEffect(() => {
+    alert(
+      "This is a very early version of my reddit clone (0 functionality, no database/ backend, 0 responsiveness, etc etc ). I am still learning how to best use Tailwind and Next.js so if the code looks really spaghetti thats why! I am also playing around with Tailwind styling so the entire project is in index.js but I am eventually going to use react components for posts, ad banners, trending , etc. Last Updated May 2021."
+    );
+  }, []);
+
   const h32 = {
     height: "40rem",
   };
@@ -141,10 +148,9 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="bg-black h-20 w-2/6">
-              <p className="text-white">
-                adding top communites and trending communities under{" "}
-              </p>
+            {/*             the container at the bottom is the right black side  */}
+            <div className="bg-gray-200 h-20 w-2/6">
+              <p className="text-white"></p>
             </div>
           </div>
 
